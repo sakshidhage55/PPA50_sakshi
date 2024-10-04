@@ -1,0 +1,16 @@
+import java.io.*;
+
+class BInput
+{
+    public static void main(String Arg[])
+    {
+        //InputStreamReader iobj = new InputStreamReader(System.in);//System.in is keyboard
+        //BufferedReader bobj = new BufferedReader(iobj);
+
+        BufferedReader bobj = new BufferedReader(new InputStreamReader(System.in));
+        System.out.println("Enter your name: ");
+        String name = bobj.readLine();
+
+        System.out.println("Welcome : "+name);
+    }
+}
